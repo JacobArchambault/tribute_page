@@ -1,10 +1,65 @@
 /* 1 Element selectors */
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    margin-top: -8px;
+    opacity: 50%;
+}
+
+header p {
+    padding-right: 10px;
+}
+
 img {
     max-width: 100%;
+    display: block;
+}
+
+caption {
+    display: block;
+}
+
+section {
+    background-color: black;
+    color: white;
+    text-align: justify;
+}
+
+button {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+
+button :hover {
+    background-color: rgb(0, 128, 128);
 }
 /* 2 Class selectors */
 /* 3 ID Selectors */
-#img-div {
-    text-align: center;
+#main {
+    display: flex;
+
 }
+#freeCodeCamp-link {
+    background-color: green;
+    color: yellow;
+    text-decoration: none;
+}
+
+#img-div {
+    align-self: center;
+}
+
 /* 4 Media Queries */
+
+/* TODO: 'You' header should descend and bounce up animated;
+2.  */
