@@ -1,19 +1,19 @@
 /* 1 Element selectors */
-
 header {
     background-color: darkgreen;
     color: white;
     text-align: right;
     position: fixed;
     width: 100%;
-    margin-top: -8px;
     opacity: 50%;
-    font-size: 2.5rem;
-    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity: .9;
 }
 
 header p {
-    padding-right: 3rem;
+    padding-right: 1rem;
+    font-size: .8rem;
 }
 
 header p a {
@@ -27,14 +27,29 @@ header p a:visited {
     color: rgb(63, 63, 63);    
 }
 
+p {
+    font-size: .78rem;
+    line-height: 1.2;
+}
+
 button {
-    font-size: 2.5rem;
+    font-size: .8rem;
     background-color: yellow;
     color: rgb(63, 63, 63);
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
     align-self: flex-end;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 100%;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+button a {
+    color: yellow;
+    color: rgb(63, 63, 63);
 }
 
 button a:visited {
@@ -47,13 +62,13 @@ button a:visited {
 #main {
     display: flex;
     flex-direction: column;
-    padding-top: 11rem;
+    padding-top: 3rem;
 }
 
 #main p {
     text-align: justify;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-indent: 1rem;
 }
 
@@ -61,7 +76,15 @@ button a:visited {
     align-self: center;
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: .67rem;
+    text-align: center;
+    padding-bottom: .33rem;
+}
+
+#img-div img {
+    width: auto;
+    height: auto;
+    max-height: 11rem;
 }
 
 #tribute-info {
@@ -71,14 +94,25 @@ button a:visited {
     flex-direction: column;
 }
 
+#tribute-info p a {
+    color: yellow;
+}
+
 #tribute-info p a:visited {
     color: yellow;
 }
-/* @media only screen and (min-width:600px) {
 
-}
+ /* @media only screen and (min-width:600px) {
+    header {
+        text-align: center;
+    }
 
-@media only screen and (min-width:768px) {
+    header p {
+        padding-right: 0;
+    }
+} */
+
+/*@media only screen and (min-width:768px) {
 
 }
 @media only screen and (min-width:992px) {
