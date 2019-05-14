@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
 } */
+
 header {
     background-color: darkgreen;
     color: white;
@@ -12,51 +13,53 @@ header {
     margin-top: -8px;
     opacity: 50%;
     font-size: 2.5rem;
-}
-header p {
-    padding-right: 1rem;
     
 }
+
+header p {
+    padding-right: 3rem;
+}
+
 header p a {
     font-family: 'Lato', sans-serif;
+    background-color: yellow;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
-/* img {
-    max-width: 100%;
-    display: block;
-}
-caption {
-    display: block;
-}
-
-section {
-    background-color: black;
-    color: white;
-    text-align: justify;
+header p a:visited {
+    color: rgb(63, 63, 63);    
 }
 
 button {
-    background-color: rgb(128, 0, 0);
-    color: white;
-    transition-duration: 1s;
-    transition-property: background-color;
+    font-size: 2.5rem;
+    background-color: yellow;
+    color: rgb(63, 63, 63);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    align-self: flex-end;
+    margin-right: 3rem;
 }
 
-button :hover {
-    background-color: rgb(0, 128, 128);
-} */
+button a:visited {
+    color: yellow;
+    color: rgb(63, 63, 63);
+}
+
 /* 2 Class selectors */
 /* 3 ID Selectors */
 #main {
     display: flex;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 11rem;
 }
-/* #freeCodeCamp-link {
-    background-color: green;
-    color: yellow;
-    text-decoration: none;
-} */
+
+#main p {
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    text-indent: 1rem;
+}
 
 #img-div {
     align-self: center;
@@ -65,10 +68,16 @@ button :hover {
     font-size: 2rem;
 }
 
-/* 4 Media Queries */
+#tribute-info {
+    background-color: darkgreen;
+    color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+}
 
-/* TODO: 'You' header should descend and bounce up animated;
-2.  */
+#tribute-info p a:visited {
+    color: yellow;
+}
 /* @media only screen and (min-width:600px) {
 
 }
