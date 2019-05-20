@@ -1,41 +1,56 @@
 /* 1 Element selectors */
-header {
+body {
     background-color: darkgreen;
-    color: white;
-    text-align: right;
-    position: fixed;
-    width: 100%;
-    opacity: 50%;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    opacity: .9;
-}
-
-header p {
-    padding-right: 1rem;
+    color: rgb(215, 215, 215);
+    font-family: 'SymbolaRegular', serif;
+    font-weight: normal;
+    font-style: normal;
     font-size: .8rem;
 }
 
+header {
+    background-color: darkgreen;
+    opacity: .8;
+    padding-bottom: .33rem;
+    padding-top: .33rem;    
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    z-index: 1;
+}
+
 header p a {
+    background-color: rgb(255, 255, 63);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    color: rgb(63, 63, 63);    
     font-family: 'Lato', sans-serif;
-    background-color: yellow;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
 }
 
 header p a:visited {
     color: rgb(63, 63, 63);    
 }
 
+h1 {
+    position: absolute;
+    font-size: 9rem;
+    left: 50%;
+    max-width: 100%;
+    transform: translateX(-50%)
+}
 p {
-    font-size: .78rem;
     line-height: 1.2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
 }
 
 button {
     font-size: .8rem;
     background-color: yellow;
-    color: rgb(63, 63, 63);
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
     border-bottom-left-radius: 25%;
@@ -43,48 +58,37 @@ button {
     align-self: flex-end;
     margin-right: 1rem;
     margin-bottom: 100%;
-    padding-top: .25rem;
     padding-bottom: .25rem;
+    padding-top: .25rem;
 }
 
 button a {
-    color: yellow;
     color: rgb(63, 63, 63);
 }
 
 button a:visited {
-    color: yellow;
     color: rgb(63, 63, 63);
 }
 
-/* 2 Class selectors */
 /* 3 ID Selectors */
 #main {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
 }
 
 #main p {
     text-align: justify;
-    margin-left: 1rem;
-    margin-right: 1rem;
     text-indent: 1rem;
 }
 
 #img-div {
     align-self: center;
-    display: flex;
-    flex-direction: column;
     font-size: .67rem;
     text-align: center;
-    padding-bottom: .33rem;
 }
 
 #img-div img {
-    width: auto;
-    height: auto;
-    max-height: 11rem;
+    width: 100%;
 }
 
 #tribute-info {
@@ -92,14 +96,15 @@ button a:visited {
     color: rgb(215, 215, 215);
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 #tribute-info p a {
-    color: yellow;
+    color: rgb(255, 255, 63);
 }
 
 #tribute-info p a:visited {
-    color: yellow;
+    color: rgb(255, 255, 63);
 }
 
  /* @media only screen and (min-width:600px) {
