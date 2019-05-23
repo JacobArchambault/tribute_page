@@ -1,4 +1,5 @@
 /* 1 Element selectors */
+
 body {
     background-color: darkgreen;
     color: rgb(215, 215, 215);
@@ -9,13 +10,11 @@ body {
 
 button {
     align-self: flex-end;
-    background-color: yellow;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
     font-size: .8rem;
-    margin-right: 1rem;
     padding-bottom: .25rem;
     padding-top: .25rem;
 }
@@ -30,7 +29,6 @@ button a:visited {
 
 h1 {
     font-size: 9rem;
-    margin-bottom: 0;
 }
 
 header {
@@ -85,7 +83,12 @@ section {
     color: rgb(63, 63, 63);    
 }
 
+.yellow-button {
+    background-color: yellow;
+}
+
 /* 3 ID Selectors */
+
 
 #img-div {
     align-self: center;
@@ -93,22 +96,29 @@ section {
     text-align: center;
 }
 
-#title {
-    left: 50%;
-    max-width: 100%;
-    position: absolute;
-    transform: translateX(-50%)
-
+#info-button {
+    margin-right: 1rem;
 }
 
 #quote {
     display: none;
 }
 
+#title {
+    left: 50%;
+    max-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -1rem;
+}
+
 #tribute-info {
     color: rgb(215, 215, 215);
     display: flex;
     flex-direction: column;
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tribute-info p a {
@@ -119,25 +129,40 @@ section {
     color: rgb(255, 255, 63);
 }
 
- @media only screen and (min-width:600px) {
+@media only screen and (min-width:360px) {
+    #title {
+        top: 1rem;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    button {
+        font-size: 1rem;
+    }
 
     header {
         text-align: center;
+        font-size: 1rem;
+    }
+
+    #img-div {
+        font-size: .8rem;
+    }
+
+    #title {
+        top: 11rem;
     }
 
     #tribute-info {
         font-size: 1rem;
         padding: 0;
         flex-basis: 100%;
+        max-width: 37rem;
+        margin-left: auto;
     }
-    /* p {
-        padding-right: 0;
-    } */
+}
 
-    #tribute-info-and-quote {
-        display: flex;
-        flex-direction: row;
-    }
+@media only screen and (min-width:768px) {
 
     #quote {
         display: flex;
@@ -152,14 +177,22 @@ section {
         right: 0;
         transform: translateX(0);
         top: 18rem;
+        text-align: right;
+    }
+
+    #tribute-info {
+        max-width: none;
+        font-size: 1rem;
+    }
+
+    #tribute-info-and-quote {
+        display: flex;
+        flex-direction: row;
     }
 
 }
 
-/*@media only screen and (min-width:768px) {
-
-}
-@media only screen and (min-width:992px) {
+/*@media only screen and (min-width:992px) {
 
 }
 @media only screen and (min-width:1200px) {
